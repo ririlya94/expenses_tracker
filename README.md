@@ -9,7 +9,7 @@ Design credit: https://www.figma.com/community/file/998557875473123405
 This project is a starting point for a Flutter application.
 Flutter version: 3.3.7
 
-# For developer use only
+### For developer use only
 1. To generate .g class for freeze command : flutter pub run build_runner build
 2. To delete output cache build & generate .g class for freeze command : flutter packages pub run build_runner build --delete-conflicting-outputs
 
