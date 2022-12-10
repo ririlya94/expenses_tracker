@@ -7,12 +7,12 @@ Design credit: https://www.figma.com/community/file/998557875473123405
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+Flutter version: 3.3.7
 
-A few resources to get you started if this is your first Flutter project:
+#For developer use only
+1. To generate .g class for freeze command : flutter pub run build_runner build
+2. To delete output cache build & generate .g class for freeze command : flutter packages pub run build_runner build --delete-conflicting-outputs
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+###Command build
+1. flutter build apk --target=lib/main-development.dart --flavor=development (To make release for dev flavour)
+2. flutter build apk --target=lib/main-production.dart --flavor=production (To make release for production flavour)
