@@ -1,7 +1,8 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:expenses_tracker/common.dart';
-import 'package:expenses_tracker/utils/ConstantColor.dart';
-import 'package:expenses_tracker/utils/ConstantText.dart';
+import 'package:expenses_tracker/screen/OnboardingScreen.dart';
+import 'package:expenses_tracker/constant/ConstantColor.dart';
+import 'package:expenses_tracker/constant//ConstantText.dart';
 import 'package:expenses_tracker/utils/GeneralWidget.dart';
 import 'package:expenses_tracker/utils/HelperFunction.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,7 @@ class RouteGenerator {
                   child: TextBold(ConstantText.AppNameTitle, Colors.white, 56, TextAlign.center, 1)
               ),
               screenFunction: () async {
-                return MyHomePage(title: 'Test',);
+                return OnboardingScreen();
               },
               splashTransition: SplashTransition.fadeTransition,
               pageTransitionType: PageTransitionType.fade,
